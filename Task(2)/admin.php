@@ -1,28 +1,122 @@
-<?php
-/*************************************************** Start MS Word ***************************************************/
-//$my_file_word = 'local-file.docx';
-//$message_word = 'My name is kareem and i put this string as a content in file "'.$my_file_word.'"';
-//file_put_contents($my_file_word, $message_word); //result in local-file.docx file "MS Word file"
+<!DOCTYPE html>
+<html lang="en">
 
-//echo 'You submitted the following data => <span style="color: red;">'.$message_word.'</span> <span style="color: blue; font-weight: bold;"><a href="local-file.docx">Go now and check your "'.$my_file_word.'" file.</a></span>';
-/*************************************************** End MS Word ***************************************************/
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
 
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 
-/*************************************************** Start txt (Text Document) ***************************************************/
-$my_file_txt = 'local-file.txt';
-$message_txt = 'My name is kareem and i put this string as a content file "'.$my_file_txt.'"';
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 
-//----- file_put_contents(file.extension, content, mode, context); -----//
-//modes:
-    //FILE_APPEND
-    //LOCK_EX (EX is Exclusive)
-    //FILE_USE_INCLUDE_PATH
+    <style>
+        body {
+            background-image: url('images/background-3.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
 
-//without the third argument "FILE_APPEND" the message ($message_txt) will be replaced by new one in the same file ($my_file_txt) as like overwriting
-file_put_contents($my_file_txt, $message_txt."\n", FILE_APPEND | LOCK_EX); //result in local-file.txt file "Text Document file"
+</head>
 
+<body>
 
-echo 'You submitted the following data => <span style="color: red;">'.$message_txt.'</span> <span style="color: blue; font-weight: bold;"><a href="local-file.txt">Go now and check your "'.$my_file_txt.'" file.</a></span><br>';
+    <header class="head-1">
+        <h3> Welcome back ADMIN - have a good day! </h3>
+    </header><br>
 
-/*************************************************** End txt (Text Document) ***************************************************/
-?>
+    <div class="slide-container swiper">
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+
+                <div class="card swiper-slide">
+
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="images/focus.jfif" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Focus</h2>
+                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                        <button class="button">Make Rentable</button>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="images/elentra.jfif" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Elentra</h2>
+                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                        <button class="button">Make Rentable</button>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="images/corola.jfif" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Toyota Corola</h2>
+                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                        <button class="button">Make Rentable</button>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="images/cerato.jfif" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Kia Cerato</h2>
+                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                        <button class="button">Make Rentable</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+</body>
+
+<!-- Swiper JS -->
+<script src="js/swiper-bundle.min.js"></script>
+
+<!-- JavaScript -->
+<script src="js/script.js"></script>
+
+</html>
