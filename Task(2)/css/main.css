@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.head-1{
+    font-weight:bold ;
+    text-align:center;
+    background-color:darkslategray;
+    color: cornsilk;
+    width: 50%;
+    margin: 3% ;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    opacity: 0.9;
+    padding: 10px 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.card {
+    background-image: linear-gradient(rgba(0.1,0.1,0.1,0.8), rgba(0.1,0.1,0.1,0.8));
+    color: cornsilk;
+    width: 22%;
+    height: 400px;
+    margin: 10px;
+    padding: 1%;
+    border-radius: 15px;
+}
+
+.card-image {
+    background-color: aqua;
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card p{
+    margin-bottom: 10%;
+}
+.card-1 {
+    background-image: url('../images/focus.jfif');
+}
+.card-2 {
+    background-image: url('../images/cerato.jfif');
+}
+.card-3 {
+    background-image: url('../images/elentra.jfif');
+}
+.card-4 {
+    background-image: url("../images/corola.jfif");
+}
+.card b {
+    padding: 10px;
+}
+
+button {
+    background-color:darkslategray;
+    color: white;
+    display: block;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    width:55%;
+    padding: 15px 10px;
+    margin: 0% auto;
+    transition: 0.5s ease-in ;
+}
+
+button:hover{
+    background-color: #2C4474;
+    color: cornsilk;
+    font-weight: bold;
+    transition: 0.5s ease-in ;
+}
+/* .button button{
+    padding: 10px;
+    margin: 10% auto 1% auto;
+} */
+.card:hover {
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}

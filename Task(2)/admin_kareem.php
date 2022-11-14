@@ -88,8 +88,8 @@
 
 <?php
 /*************************************************** Start txt (Text Document) ***************************************************/
-$my_file_txt = 'local-file.txt';
-$message_txt = 'My name is kareem and i put this string as a content file "' . $my_file_txt . '"';
+$database = 'local-file.txt';
+$admin_car_rentable = 'true';
 
 //----- file_put_contents(file.extension, content, mode, context); -----//
 //modes:
@@ -97,11 +97,11 @@ $message_txt = 'My name is kareem and i put this string as a content file "' . $
 //LOCK_EX (EX is Exclusive)
 //FILE_USE_INCLUDE_PATH
 
-//without the third argument "FILE_APPEND" the message ($message_txt) will be replaced by new one in the same file ($my_file_txt) as like overwriting
-file_put_contents($my_file_txt, $message_txt . "\n", FILE_APPEND | LOCK_EX); //result in local-file.txt file "Text Document file"
+//without the third argument "FILE_APPEND" the message ($admin_car_rentable) will be replaced by new one in the same file ($database) as like overwriting
+file_put_contents($database, $admin_car_rentable . "\n", FILE_APPEND | LOCK_EX); //result in local-file.txt file "Text Document file"
 
 
-echo 'You submitted the following data => <span style="color: red;">' . $message_txt . '</span> <span style="color: blue; font-weight: bold;"><a href="local-file.txt">Go now and check your "' . $my_file_txt . '" file.</a></span><br>';
+echo 'You submitted the following data => <span style="color: red;">' . $admin_car_rentable . '</span> <span style="color: blue; font-weight: bold;"><a href="local-file.txt">Go now and check your "' . $database . '" file.</a></span><br>';
 
 /*************************************************** End txt (Text Document) ***************************************************/
 ?>

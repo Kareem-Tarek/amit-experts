@@ -1,120 +1,80 @@
 <!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com -->
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer</title>
-
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <style>
         body {
-            background-image: url('images/background-4.jpg');
+            background-image: url('images/background-3.jpg');
             background-repeat: no-repeat;
             background-size: 100% 100%;
             background-attachment: fixed;
         }
     </style>
+
 </head>
 
 <body>
-    <header class="head-1">
-        <h3 style="font-weight:bold ; text-align:center;"> Welcome dear Customer - Please choose from the available cars </h3>
-    </header>
 
-    <div class="slide-container swiper">
-        <div class="slide-content">
-            <div class="card-wrapper swiper-wrapper">
-
-                <div class="card swiper-slide">
-
-                    <div class="image-content">
-                        <span class="overlay"></span>
-
-                        <div class="card-image">
-                            <img src="images/focus.jfif" alt="" class="card-img">
-                        </div>
-                    </div>
-
-                    <div class="card-content">
-                        <h2 class="name">Focus</h2>
-                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-                        <button class="button">Rent</button>
-                    </div>
-                </div>
-
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay"></span>
-
-                        <div class="card-image">
-                            <img src="images/elentra.jfif" alt="" class="card-img">
-                        </div>
-                    </div>
-
-                    <div class="card-content">
-                        <h2 class="name">Elentra</h2>
-                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-                        <button class="button">Rent</button>
-                    </div>
-                </div>
-
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay"></span>
-
-                        <div class="card-image">
-                            <img src="images/corola.jfif" alt="" class="card-img">
-                        </div>
-                    </div>
-
-                    <div class="card-content">
-                        <h2 class="name">Toyota Corola</h2>
-                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-                        <button class="button">Rent</button>
-                    </div>
-                </div>
-
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay"></span>
-
-                        <div class="card-image">
-                            <img src="images/cerato.jfif" alt="" class="card-img">
-                        </div>
-                    </div>
-
-                    <div class="card-content">
-                        <h2 class="name">Kia Cerato</h2>
-                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-                        <button class="button">Rent</button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="swiper-button-next swiper-navBtn"></div>
-        <div class="swiper-button-prev swiper-navBtn"></div>
-        <div class="swiper-pagination"></div>
+    <div class="head-1">
+        <h2>Dear (Customer) - Welcome to Car-rent app - please choose from the rentable cars</h2>
     </div>
 
+    <section class="container">
+
+        <div class="card">
+            <div class="card-image card-1"></div>
+            <h2>Title</h2>
+            <p>Lorem ipsum dolor sit amet doloremque ipsum eveniet omnis sunt numquam obcaecati iure numquam obcaecati iure vitae, asperiores!</p>
+
+            <form action="admin.php" method="post">
+                <button type="submit">Rent Car</button>
+            </form>
+
+        </div>
+
+        <div class="card">
+            <div class="card-image card-2"></div>
+            <h2>Title</h2>
+            <p>Lorem ipsum dolor sit amet doloremque ipsum eveniet omnis sunt numquam obcaecati iure numquam obcaecati iure vitae, asperiores!</p>
+
+            <form action="admin.php" method="post">
+                <button type="submit">Rent Car</button>
+            </form>
+
+        </div>
+
+        <div class="card">
+            <div class="card-image card-3"></div>
+
+            <h2>Title</h2>
+            <p>Lorem ipsum dolor sit amet doloremque ipsum eveniet omnis sunt numquam obcaecati iure numquam obcaecati iure vitae, asperiores!</p>
+
+
+            <form action="admin.php" method="post">
+                <button type="submit">Rent Car</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <div class="card-image card-4"></div>
+            <h2>Title</h2>
+            <p>Lorem ipsum dolor sit amet doloremque ipsum eveniet omnis sunt numquam obcaecati iure numquam obcaecati iure vitae, asperiores!</p>
+
+            <form action="admin.php" method="post">
+                <button type="submit">Rent Car</button>
+            </form>
+
+        </div>
+
+    </section>
 </body>
-
-<!-- Swiper JS -->
-<script src="js/swiper-bundle.min.js"></script>
-
-<!-- JavaScript -->
-<script src="js/script.js"></script>
 
 </html>
